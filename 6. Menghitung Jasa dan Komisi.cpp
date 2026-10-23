@@ -2,22 +2,22 @@
 using namespace std;
 
 int main() {
-    float pendptan, jasa, komisi, total;
+    float pendapatan, jasa, komisi, total;
 
     cout << "Pendapatan Hari ini Rp. ";
-    cin >> pendptan;
+    cin >> pendapatan;
 
-    if (pendptan >= 0 && pendptan <= 20000) {
+    if (pendapatan >= 0 && pendapatan <= 20000) {
         jasa = 10000;
-        komisi = 0.1 * pendptan;
+        komisi = 0.1 * pendapatan;
     }
-    else if (pendptan <= 50000) {
+    else if (pendapatan <= 50000) {
         jasa = 20000;
-        komisi = 0.15 * pendptan;
+        komisi = 0.15 * pendapatan;
     }
     else {
         jasa = 30000;
-        komisi = 0.2 * pendptan;
+        komisi = 0.2 * pendapatan;
     }
 
     total = komisi + jasa;
